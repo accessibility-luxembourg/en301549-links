@@ -1,0 +1,25 @@
+{
+  "name": "@accessibility-luxembourg/en301549-links",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "python3 build.py",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/accessibility-luxembourg/en301549-links.git"
+  },
+  "keywords": [
+    "en301549",
+    "accessibility"
+  ],
+  "author": "SIP",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/accessibility-luxembourg/en301549-links/issues"
+  },
+  "homepage": "https://github.com/accessibility-luxembourg/en301549-links#readme"
+}
