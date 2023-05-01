@@ -64,7 +64,7 @@ def main():
             f.write(intro)
             f.write('\nen301549.versions = ' + json.dumps(versions, indent=4) + ';' )
             f.write('\nen301549.mapping = ' + json.dumps(pages, indent=4) + ';')
-            f.write('\nexports.en301549 = en301549;')
+            f.write('\nmodule.exports = en301549;')
         with open('./cjs/package.json', 'w') as f:
             f.write('{"type": "commonjs"}')
 
