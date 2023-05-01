@@ -11,7 +11,7 @@ npm install en301549-links
 ## Usage
 
 ```
-import en301549
+import en301549 from 'en301549-links'
 
 // get the page number of the section 9.1.1.1 in the norm version 3.2.1 
 en301549.getPageNumber('3.2.1', '9.1.1.1');
@@ -20,11 +20,11 @@ en301549.getPageNumber('3.2.1', '9.1.1.1');
 
 // get the url of the section 9.1.1.1 in the norm version 1.1.2
 en301549.getUrl('1.1.2', '9.1.1.1');
-// result : https://www.etsi.org/deliver/etsi_en/301500_301599/301549/01.01.02_60/en_301549v010102p.pdf#page=41'
+// result: https://www.etsi.org/deliver/etsi_en/301500_301599/301549/01.01.02_60/en_301549v010102p.pdf#page=41'
 
 // create an html link towards the section 9.1.1.1 of the norm version 3.2.1
-en301549.getLink('3.2.1', '9.1.1.1');
-// result: <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=45" >9.1.1.1 Non-text content</a>
+en301549.getLink('3.2.1', '9.1.1.1', 'class="european-norm" id="9.1.1.1"')
+// result: <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=45" class="european-norm" id="9.1.1.1">9.1.1.1 Non-text content</a>
 ```
 
 ## License
