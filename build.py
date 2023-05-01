@@ -52,7 +52,7 @@ def main():
     for version in versions:
         pages[version] = getPages(versions[version])
     with open('./helpers.js', 'r') as helpers:
-        with open('index.js', 'w') as f:
+        with open('index.mjs', 'w') as f:
             f.write(helpers.read())
             f.write('\nen301549.versions = ' + json.dumps(versions, indent=4) + ';' )
             f.write('\nen301549.mapping = ' + json.dumps(pages, indent=4) + ';')
