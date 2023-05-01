@@ -51,12 +51,22 @@ def main():
     pages = {}
     for version in versions:
         pages[version] = getPages(versions[version])
+    os.makedirs('./esm', exist_ok=True)
+    os.makedirs('./cjs', exist_ok=True)
     with open('./helpers.js', 'r') as helpers:
-        with open('index.mjs', 'w') as f:
-            f.write(helpers.read())
+        intro = helpers.read()
+        with open('./esm/index.js', 'w') as f:
+            f.write(intro)
             f.write('\nen301549.versions = ' + json.dumps(versions, indent=4) + ';' )
             f.write('\nen301549.mapping = ' + json.dumps(pages, indent=4) + ';')
             f.write('\nexport default en301549;')
+        with open('./cjs/index.js', 'w') as f:
+            f.write(intro)
+            f.write('\nen301549.versions = ' + json.dumps(versions, indent=4) + ';' )
+            f.write('\nen301549.mapping = ' + json.dumps(pages, indent=4) + ';')
+            f.write('\nexports.en301549 = en301549;')
+        with open('./cjs/package.json', 'w') as f:
+            f.write('{"type": "commonjs"}')
 
 if __name__ == '__main__':
     main()

@@ -134,5 +134,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-index.js
-index.mjs
+cjs/
+esm/

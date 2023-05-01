@@ -1,4 +1,4 @@
-import en301549  from './index.mjs'
+import en301549  from './esm/index.js'
 import { strict as assert } from 'node:assert';
 
 assert.strictEqual(en301549.getPageNumber('3.2.1', '9.1.1.1'), 45)
