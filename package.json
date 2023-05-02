@@ -1,6 +1,6 @@
 {
   "name": "en301549-links",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "The european norm EN 301 549 is only published as a PDF file. It is thus not so easy to link to a particular section in the document. The goal of this library is to be able to get the URL of a particular section of the norm and create corresponding links.",
   "type": "module",
   "main": "./cjs/index.js",
