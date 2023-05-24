@@ -1,6 +1,7 @@
 # en301549-links
 
 The european norm [EN 301 549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) is only published as a PDF file. It is thus not so easy to link to a particular section in the document. The goal of this library is to be able to get the URL of a particular section of the norm and create corresponding links.
+The URL to a specific page comply with the [specification defined by Adobe](https://helpx.adobe.com/acrobat/kb/link-html-pdf-page-acrobat.html). It is compatible with most desktop browsers but does not work properly on mobile browsers (last tested in may 2023).
 
 ## Installation
 
